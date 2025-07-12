@@ -1,0 +1,104 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f2f2f2;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+    text-align: center;
+}
+
+header {
+    background-color: #ff66b2;
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.2em;
+    font-weight: 300;
+}
+
+.galeria {
+    margin-bottom: 40px;
+}
+
+.galeria h2 {
+    font-size: 2em;
+    color: #ff66b2;
+    margin-bottom: 20px;
+}
+
+.imagenes {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.imagenes img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.imagenes img:hover {
+    transform: scale(1.1);
+}
+
+.mensajes {
+    margin-bottom: 40px;
+}
+
+.mensajes h2 {
+    font-size: 2em;
+    color: #ff66b2;
+    margin-bottom: 20px;
+}
+
+.mensaje {
+    margin-bottom: 20px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1s ease-out;
+}
+
+.mensaje p {
+    font-size: 1.3em;
+    color: #555;
+}
+
+footer {
+    font-size: 1em;
+    color: #777;
+    margin-top: 30px;
+}
+
+/* Animación */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
